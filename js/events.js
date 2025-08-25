@@ -10,9 +10,6 @@ const fullBody = document.getElementById('full-body');
 
 const bodyText = document.querySelector('h1');
 
-const paragraphText = document.querySelector('p');
-
-
 // const buttonClick = document.getElementById('click-me');
 
 
@@ -45,7 +42,7 @@ addEvent('#click-me', 'mouseout', function () {
     fullBody.style.backgroundColor = 'yellow';
 });
 
-addEvent('#full-body', 'scroll', function () {
-    console.log('scrolling pressing');
-});
+// addEvent('#full-body', 'scroll', function () {
+//     console.log('scrolling pressing');
+// });
 
