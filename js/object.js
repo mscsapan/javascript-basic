@@ -7,7 +7,7 @@ let person = {
 };
 
 person.education = 'BSc in CSE';
-person.all = () => person.firstName + ' ' + person.lastName;
+person.all = () => person.firstName + ' ' + person.lastName + ' ' + person.age + ' ' + person.eyeColor;
 // person.all = function() {return person.firstName + person.lastName};
 console.log(person.all());
 
