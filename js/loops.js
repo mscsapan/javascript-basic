@@ -35,9 +35,4 @@ for (const e of myList) {
     count += e;
 }
 
-const myName = 'Ali'
-
-console.log('my name is ' + myName)
-
-
 console.log('Count : ' + count);
