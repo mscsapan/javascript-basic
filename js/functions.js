@@ -15,9 +15,11 @@
 // const censius = toCelsius('77.333');
 
 // document.getElementById('body').innerHTML = censius;
+let greeting = null;
+greeting = 'Welcome back';
 
 const yourName = (name) => {
-    console.log(`Hello ${name}`);
+    console.log(`${greeting ?? 'Hello'} ${name ?? 'Mohammad'}`);
 }
 
-yourName('Mohammad Ali')
+yourName('Ali')
