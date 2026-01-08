@@ -7,11 +7,17 @@
 
 // console.log(my_name);
 
-function toCelsius(value) {
-    console.log(typeof value);
-    return value;
+// function toCelsius(value) {
+//     console.log(typeof value);
+//     return value;
+// }
+
+// const censius = toCelsius('77.333');
+
+// document.getElementById('body').innerHTML = censius;
+
+const yourName = (name) => {
+    console.log(`Hello ${name}`);
 }
 
-const censius = toCelsius('77.333');
-
-document.getElementById('body').innerHTML = censius;
+yourName('Mohammad Ali')
