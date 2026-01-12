@@ -4,4 +4,7 @@ const names = {
     age: 24
 }
 
-console.log(names);
+const myList = ['Mohammad', 'Ali', 24, false, names];
+
+// console.log(names.firstName);
+console.log(myList);
