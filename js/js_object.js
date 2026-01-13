@@ -64,12 +64,29 @@ const carModel = {
     name: "Pontiac",
     model: "GTO",
     year: 1972,
-    color: ['Green', 'Red', 'Yello', 'White', 'Black'],
+    colors: ['Green', 'Red', 'Yellow', 'White', 'Black'],
     country: "Poland",
     isAvailableNow: true,
-    detail: function () {
+    // detail: function () {
+    //     return `Car name is ${this.name}`;
+    // },
+    detail() {
         return `Car name is ${this.name}`;
     },
 }
 
-console.log(carModel.detail());
+
+
+console.log(`Color type is ${typeof colors}`);
+
+if (carModel.hasOwnProperty('color')) {
+    for (let i = 0; i < carModel.color.length; i++) {
+        console.log(carModel.color[i]);
+    }
+} else {
+    console.log(`not found for color property`);
+}
+
+
+
+console.log(typeof carModel.color);
