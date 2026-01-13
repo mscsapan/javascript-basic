@@ -21,6 +21,7 @@
 
 // console.log(names.info());
 
+
 // const carModel = [
 //     {
 //         "name": "Pontiac",
@@ -59,34 +60,58 @@
 //     },
 // ]
 
+// const carModel = {
+//     name: "Pontiac",
+//     model: "GTO",
+//     year: 1972,
+//     colors: ['Green', 'Red', 'Yellow', 'White', 'Black'],
+//     country: "Poland",
+//     isAvailableNow: true,
+//     // detail: () =>{
+//     //      return `Car name is ${this.name}`;
+//     // },
+//     //Arrow functions don't have their own this - they inherit this from the outer scope
 
-const carModel = {
-    name: "Pontiac",
-    model: "GTO",
-    year: 1972,
-    colors: ['Green', 'Red', 'Yellow', 'White', 'Black'],
-    country: "Poland",
-    isAvailableNow: true,
-    // detail: function () {
-    //     return `Car name is ${this.name}`;
-    // },
-    detail() {
-        return `Car name is ${this.name}`;
-    },
+//     // detail: function () {
+//     //     return `Car name is ${this.name}`;
+//     // },
+//     detail() {
+//         return `Car name is ${this.name}`;
+//     },
+// }
+
+
+// console.log(`Color type is ${typeof colors}`);
+
+// if (carModel.hasOwnProperty('color')) {
+//     for (let i = 0; i < carModel.color.length; i++) {
+//         console.log(carModel.color[i]);
+//     }
+// } else {
+//     console.log(`not found for color property`);
+// }
+
+
+
+// console.log(typeof carModel.color);
+
+
+const car1 = {
+    "name": "Pontiac",
+    "model": "GTO",
+    "year": 1972,
+    "color": "Green",
+    "country": "Poland"
 }
 
-
-
-console.log(`Color type is ${typeof colors}`);
-
-if (carModel.hasOwnProperty('color')) {
-    for (let i = 0; i < carModel.color.length; i++) {
-        console.log(carModel.color[i]);
-    }
-} else {
-    console.log(`not found for color property`);
+const car2 = {
+    "name": "Dodge",
+    "model": "Avenger",
+    "year": 2000,
+    "color": "Maroon",
+    "country": "Uruguay"
 }
 
+const combinedObj = Object.assign({}, car1, car2)
 
-
-console.log(typeof carModel.color);
+console.log(combinedObj);
