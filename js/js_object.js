@@ -96,22 +96,45 @@
 // console.log(typeof carModel.color);
 
 
-const car1 = {
-    "name": "Pontiac",
-    "model": "GTO",
-    "year": 1972,
-    "color": "Green",
-    "country": "Poland"
+// const car1 = {
+//     "name": "Pontiac",
+//     "model": "GTO",
+//     "year": 1972,
+//     "color": "Green",
+//     "country": "Poland"
+// }
+
+// const car2 = {
+//     "name": "Dodge",
+//     "model": "Avenger",
+//     "year": 2000,
+//     "color": "Maroon",
+//     "country": "Uruguay"
+// }
+
+// const combinedObj = Object.assign({}, car1, car2)
+
+// console.log(combinedObj);
+
+//Modern way with spread opearor
+
+const abc = {
+    a: 'Australia',
+    b: 'Bangladesh',
+    c: 'Canada'
+}
+const pqr = {
+    p: 'Polland',
+    q: 'Qatar',
+    r: 'Russia'
+}
+const xyz = {
+    x: 'X-ray',
+    y: 'Yahoo',
+    z: 'Zoo'
 }
 
-const car2 = {
-    "name": "Dodge",
-    "model": "Avenger",
-    "year": 2000,
-    "color": "Maroon",
-    "country": "Uruguay"
-}
+// const finalResult = Object.assign({}, abc, pqr, xyz);
+const finalResult = { ...abc, ...pqr, ...xyz };
 
-const combinedObj = Object.assign({}, car1, car2)
-
-console.log(combinedObj);
+console.log(finalResult);
