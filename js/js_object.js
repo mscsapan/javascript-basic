@@ -137,4 +137,4 @@ const xyz = {
 // const finalResult = Object.assign({}, abc, pqr, xyz);
 const finalResult = { ...abc, ...pqr, ...xyz };
 
-console.log(finalResult);
+// console.log(finalResult);
