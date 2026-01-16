@@ -27,3 +27,4 @@ const lastName = ' Ali';
 // console.log(firstName.charAt(0));//h
 // console.log(firstName.concat(lastName));//Mohammad Ali
 // console.log(firstName.length);//8
+console.log(firstName.slice(-1));
