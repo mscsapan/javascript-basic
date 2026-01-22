@@ -30,9 +30,13 @@ const myList = [1, 2, 3, 4, 5, 6, 7, 8];
 //     i++;
 // }
 
-for (const e of myList) {
-    console.log(e);
-    count += e;
-}
+// for (const e of myList) {
+//     console.log(e);
+//     count += e;
+// }
 
-console.log('Count : ' + count);
+// console.log('Count : ' + count);
+// console.log('Count : ' + count);
+
+myList.forEach((n) => count += n);
+console.log(count);
