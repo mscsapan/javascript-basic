@@ -4,3 +4,4 @@ function hello(name) {
 }
 
 hello('Mohammad Ali Khan');
+console.log('Hello bangladesh');
